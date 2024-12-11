@@ -28,52 +28,52 @@
     grid-gap: 10px;
     max-width: 100%;
     margin: 0 auto;
-    /* border: 3px solid black; */
+
 }
 
 #header-layout {
-    display: grid; /* Make it a grid */
-    grid-template-columns: subgrid; /* Optional: Use subgrid if supported */
-    grid-column: span 9; /* Consume all 8 columns */
+    display: grid; 
+    grid-template-columns: subgrid; 
+    grid-column: span 9; 
     grid-row: 1/2;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 #main-layout {
-    display: grid; /* Make it a grid */
-    grid-column: span 9; /* Consume all 8 columns */
-    grid-row: 2/10; /* Start at row 3, end at row 9 (spans 4 rows) */
-    grid-template-columns: subgrid; /* Optional: Use subgrid if supported */
+    display: grid; 
+    grid-column: span 9; 
+    grid-row: 2/10; 
+    grid-template-columns: subgrid; 
 }
 
 #footer-layout {
-    display: grid; /* Make it a grid */
-    grid-column: span 9; /* Consume all 8 columns */
-    grid-row: 12/16; /* Start at row 3, end at row 9 (spans 4 rows) */
-    grid-template-columns: subgrid; /* Optional: Use subgrid if supported */
+    display: grid; 
+    grid-column: span 9; 
+    grid-row: 12/16; 
+    grid-template-columns: subgrid; 
 }
 
 .form-container {
     display: grid;
-    /* place-items: center; Centers content horizontally and vertically */
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 1px; /* Space between elements */
+    
+    grid-template-columns: 1fr; 
+    gap: 1px; 
     padding: 40px;
     border-radius: 20px;
-    border: 2.5px solid #e3e2e2; /* 2px width, solid style, blue color */
+    border: 2.5px solid #e3e2e2;
     grid-column: 4/7;
     grid-row: 4/5;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
- /* Styling for the form elements */
+ 
  .form-container label {
     font-family: Arial, sans-serif;
     margin-bottom: 8px;
 }
 
 .form-container input {
-    width: 100%; /* Input field takes the entire width */
+    width: 100%; 
     padding: 8px;
     font-size: 16px;
     height: 30px;
@@ -96,8 +96,7 @@
     font-weight: 700;
     height: 2px;
     letter-spacing: -.01em;
-    line-height: 0.15;
-    
+    line-height: 0.15; 
     padding: .875rem 1.125rem;
     position: relative;
     padding-left: 10px;
@@ -115,51 +114,35 @@
     
 }
 
-/* .form-container button {
-    width: fit-content; 
-    padding: 8px 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-} */
-
 .form-container button:hover {
     background-color: #0056b3;
 }
-/* Phones (up to 767px) */
+
 @media (max-width: 767px) {
     .form {
-        /* padding: 10px; */
         border-radius: 10px;
     }
 }
 
-/* Tablets (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
     .form {
-        /* padding: 15px; */
+      
         border-radius: 12px;
     }
 }
 
-/* Small Laptops (1024px to 1279px) */
 @media (min-width: 1024px) and (max-width: 1279px) {
     .form {
-        /* padding: 20px; */
         border-radius: 15px;
     }
 }
 
-/* Large Screens (1280px and above) */
 @media (min-width: 1280px) {
     .form {
-        /* padding: 25px; */
         border-radius: 20px;
     }
 }
 
-/* High-Resolution Displays */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .form {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
